@@ -3,6 +3,14 @@ node_modules/
 jspm_packages/
 .pnp
 .pnp.js
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+instance/
+.pytest_cache/
 
 # Variáveis de ambiente e segredos
 .env
