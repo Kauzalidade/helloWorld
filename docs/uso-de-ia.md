@@ -96,3 +96,18 @@ Antes de aceitar ou realizar *commit* de código gerado por IA, valide os seguin
 - [ ] **Inativação:** Foi implementada inativação lógica em vez de exclusão física para colaboradores?
 - [ ] **Logs de Auditoria:** Operações críticas registram usuário, data, hora, ação e valores anterior/novo?
 - [ ] **Testes Passando:** Os testes baseados nos cenários Gherkin (Seção 10) e exemplos numéricos (Seção 8) foram executados e passaram?
+
+
+
+---
+
+# Registro de uso de IA do grupo
+
+## 20/10/2026 - Organização inicial do repositório
+- Ferramenta: Antigravity (Gemini)
+- Prompt: colei o PDF da especificação no chat e pedi para colocar
+  na pasta docs e criar README, AGENTS.md e .gitignore
+- Resultado: converteu a spec para Markdown e criou os arquivos
+- O que conferi: números das tabelas de INSS/IRRF e exemplos da seção 8
+- O que corrigi: o README trouxe um nome (Pietro) que não está no PDF;
+  nada, estava correto
