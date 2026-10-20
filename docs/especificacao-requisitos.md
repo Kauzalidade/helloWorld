@@ -24,9 +24,10 @@ Este documento reúne, em um só lugar, tudo que foi definido com o cliente (gru
 | **Antônio Fabrício** | GTI 4º período | Regras de negócio e folha |
 | **José Roberto** | GTI 4º período | Contato com o cliente (RH) e ata |
 | **Wesley Antônio** | GTI 4º período | Testes e qualidade |
-| **Kauã** | GTI 2º período (desenvolvimento) | Representante da turma; função a definir |
-| **Jeremias** | GTI 2º período (desenvolvimento) | A definir pela equipe após receber o documento |
-| **Valdir** | GTI 2º período (desenvolvimento) | A definir pela equipe após receber o documento |
+| **Kauã** | GTI 2º período (desenvolvimento) | Representante do grupo; Repositório, INSS, IRRF e ponte com o 4º período |
+| **Jeremias** | GTI 2º período (desenvolvimento) | Desenvolvedor e Vibe Coder |
+| **Valdir** | GTI 2º período (desenvolvimento) | Desenvolvedor responsável por correções |
+| **Pietro** | GTI 2º período (desenvolvimento) | Desenvolvedor Back-end (Back-end Developer) / AI Quality Engineer |
 | **Vitor** | Grupo de RH (cliente) | Diretor de Recursos Humanos: coordena a equipe, acompanha resultados e supervisiona as atividades |
 | **Deyse** | Grupo de RH (cliente) | Analista de Departamento Pessoal: folha, férias, 13º, benefícios e documentos |
 | **Alana Catiany de Morais** | Grupo de RH (cliente) | Analista de Recrutamento e Seleção. Passou as informações ao GTI |
