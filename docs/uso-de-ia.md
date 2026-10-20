@@ -111,3 +111,29 @@ Antes de aceitar ou realizar *commit* de código gerado por IA, valide os seguin
 - O que conferi: números das tabelas de INSS/IRRF e exemplos da seção 8
 - O que corrigi: o README trouxe um nome (Pietro) que não está no PDF;
   nada, estava correto
+
+
+  # Registro de uso de IA do grupo
+
+## 20/10/2026 - prompts utilizados no projetos
+- Ferramenta: Antigravity (Gemini)
+1- Cálculos Trabalhistas & Tabela de Retenção (RH + TI)
+Prompt:
+"Atuo em um projeto interdisciplinar entre Tecnologia e Recursos Humanos. Preciso criar a lógica/tabela para os cálculos das alíquotas progressivas do INSS e do Imposto de Renda (IRRF). Por favor, apresente o cálculo detalhado de cada faixa salarial e forneça um exemplo em pseudocódigo ou estrutura de dados (JSON/Array) para implementação em código."
+
+2. Uso de Repositórios GitHub no ChatGPT
+Prompt:
+"Quais são as melhores formas de integrar ou consultar um repositório do GitHub dentro do ChatGPT? Explique como funciona a leitura de código via links públicos, uso de extensões/plugins ou upload direto de arquivos e repositórios na ferramenta."
+
+3. Integração de Repositório Existente com IDEs / Ferramentas de I.A. (Ex: Anti-Gravity)
+Prompt:
+"Tenho um repositório existente no GitHub ([https://github.com/Kauzalidade/helloWorld](https://github.com/Kauzalidade/helloWorld)). Como faço para clonar esse projeto, sincronizar as alterações e trabalhar nele utilizando o ecossistema/IDE Anti-Gravity? Forneça o passo a passo pelos comandos de terminal do Git e pela interface visual."
+
+4. Gerenciamento de Branches no Anti-Gravity / Git
+Prompt:
+"Como criar e alternar para uma nova branch (new branch) utilizando a interface do Anti-Gravity e via terminal Git? Explique o comando correto para criar a branch localmente e enviá-la para o repositório remoto no GitHub (git push -u origin <nome-da-branch>)."
+
+5. Gestão de Colaboradores e Permissões no GitHub
+Prompt:
+"Como adicionar membros de uma equipe como colaboradores em um repositório no GitHub? Forneça o passo a passo nas configurações de acesso (Manage access / Collaborators) do repositório no site do GitHub e explique como os convidados devem aceitar o convite."
+  
