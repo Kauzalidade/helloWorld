@@ -9,8 +9,8 @@ Este arquivo define as regras operacionais, comportamentais e técnicas obrigat�
 > **Se faltar informação ou houver qualquer ambiguidade, NÃO invente a regra de negócio.**
 
 - Marque qualquer suposição não confirmada explicitamente como **`[HIPÓTESE]`**.
-- Adicione a dúvida imediatamente no arquivo [docs/perguntas-pendentes.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/perguntas-pendentes.md).
-- Consulte e respeite o documento base: [docs/especificacao-requisitos.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/especificacao-requisitos.md).
+- Adicione a dúvida imediatamente no arquivo [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md).
+- Consulte e respeite o documento base: [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md).
 - Toda comunicação de dúvidas de negócio deve ser direcionada à liderança do **GTI 4º período** (Severino Felipe / Antônio Fabrício).
 
 ---
@@ -77,4 +77,4 @@ Respeite estritamente a fase atual solicitada pelo usuário. Não implemente adi
 
 ## 🤖 7. Utilização de Prompts
 
-Quando o usuário solicitar uma tarefa com IA, use como referência os templates pré-aprovados disponíveis em [docs/uso-de-ia.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/uso-de-ia.md).
+Quando o usuário solicitar uma tarefa com IA, use como referência os templates pré-aprovados disponíveis em [docs/uso-de-ia.md](docs/uso-de-ia.md).

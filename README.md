@@ -67,21 +67,21 @@ Ponto eletrônico biométrico, banco de horas (horas extras são sempre remunera
 2. **Parametrização por Vigência:** Alíquotas e faixas legais de INSS, IRRF, salário mínimo e adicionais nunca devem ser fixados no código-fonte (*hardcoded*). Devem residir em tabelas de parâmetros com data de início e fim de vigência.
 3. **Memória de Cálculo Completa:** Toda verba calculada deve registrar os parâmetros aplicados, bases de cálculo e regra de arredondamento adotada.
 4. **Segurança e LGPD:** Criptografia de senhas com algoritmo seguro (hash + salt), criptografia em repouso de dados sensíveis e de saúde (atestados médicos), e auditoria completa de alterações (*logs* imutáveis).
-5. **Regra de Ouro:** Se faltar informação ou houver ambiguidade, **não invente regras de negócio**. Consulte [docs/perguntas-pendentes.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/perguntas-pendentes.md) e reporte à equipe do GTI 4º período.
+5. **Regra de Ouro:** Se faltar informação ou houver ambiguidade, **não invente regras de negócio**. Consulte [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md) e reporte à equipe do GTI 4º período.
 
 ---
 
 ## 📂 Estrutura de Documentação
 
-- [docs/especificacao-requisitos.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/especificacao-requisitos.md): Documento oficial e integral de especificação de requisitos (v1.0 consolidada).
-- [docs/uso-de-ia.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/uso-de-ia.md): Guia de trabalho com IA, incluindo os 5 prompts padronizados e regras de conduta.
-- [docs/perguntas-pendentes.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/perguntas-pendentes.md): Rastreamento de dúvidas, hipóteses não confirmadas e pendências junto ao cliente e contabilidade.
-- [AGENTS.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/AGENTS.md): Diretrizes operacionais e restrições obrigatórias para agentes e assistentes de inteligência artificial.
+- [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md): Documento oficial e integral de especificação de requisitos (v1.0 consolidada).
+- [docs/uso-de-ia.md](docs/uso-de-ia.md): Guia de trabalho com IA, incluindo os 5 prompts padronizados e regras de conduta.
+- [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md): Rastreamento de dúvidas, hipóteses não confirmadas e pendências junto ao cliente e contabilidade.
+- [AGENTS.md](AGENTS.md): Diretrizes operacionais e restrições obrigatórias para agentes e assistentes de inteligência artificial.
 
 ---
 
 ## 🚀 Como Contribuir
 
-1. Leia integralmente o arquivo [docs/especificacao-requisitos.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/especificacao-requisitos.md).
+1. Leia integralmente o arquivo [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md).
 2. Certifique-se de que cada alteração implemente testes unitários com base nos cenários de aceite em Gherkin.
-3. Ao usar IA, siga estritamente os comandos e premissas detalhados em [docs/uso-de-ia.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/uso-de-ia.md).
+3. Ao usar IA, siga estritamente os comandos e premissas detalhados em [docs/uso-de-ia.md](docs/uso-de-ia.md).

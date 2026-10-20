@@ -8,15 +8,15 @@ Este documento orienta a equipe de desenvolvimento do **GTI 2º período** sobre
 
 > **"Não crie regra de negócio. Se faltar informação, marque como hipótese e liste como pergunta pendente."**
 
-Ao interagir com qualquer modelo ou agente de IA, certifique-se de que a IA **não invente regras tributárias, trabalhistas ou comportamentais** para preencher lacunas. Toda dúvida deve ser registrada como `[HIPÓTESE]` e encaminhada para o arquivo [docs/perguntas-pendentes.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/perguntas-pendentes.md).
+Ao interagir com qualquer modelo ou agente de IA, certifique-se de que a IA **não invente regras tributárias, trabalhistas ou comportamentais** para preencher lacunas. Toda dúvida deve ser registrada como `[HIPÓTESE]` e encaminhada para o arquivo [docs/perguntas-pendentes.md](perguntas-pendentes.md).
 
 ---
 
 ## 📋 Como Preparar o Contexto para a IA
 
 Antes de enviar qualquer solicitação de código ou modelagem para a IA:
-1. Forneça o arquivo [docs/especificacao-requisitos.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/docs/especificacao-requisitos.md) como contexto ou anexo.
-2. Reforce a instrução de respeitar as diretrizes de [AGENTS.md](file:///c:/Users/Kauã/OneDrive/Documentos/GitHub/helloWorld/AGENTS.md).
+1. Forneça o arquivo [docs/especificacao-requisitos.md](especificacao-requisitos.md) como contexto ou anexo.
+2. Reforce a instrução de respeitar as diretrizes de [AGENTS.md](../AGENTS.md).
 3. Especifique claramente qual das **4 etapas** está sendo trabalhada. Não permita que a IA implemente recursos de etapas futuras.
 
 ---
