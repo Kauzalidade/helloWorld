@@ -24,10 +24,10 @@ O sistema foi concebido com foco em segurança, rastreabilidade (auditoria), con
 - **Wesley Antônio:** Estratégia de testes e garantia de qualidade
 
 ### GTI 2º Período (Desenvolvimento)
-- **Kauã:** Representante da turma / Desenvolvedor
-- **Jeremias:** Desenvolvedor
-- **Valdir:** Desenvolvedor
-- **Pietro:** Desenvolvedor
+- **Kauã:** Representante do grupo / Repositório, INSS, IRRF e ponte com o 4º período
+- **Jeremias:** Desenvolvedor e Vibe Coder
+- **Valdir:** Desenvolvedor responsável por correções
+- **Pietro:** Desenvolvedor Back-end (Back-end Developer) / AI Quality Engineer
 
 ### Grupo de RH (Cliente)
 - **Vitor:** Diretor de Recursos Humanos
