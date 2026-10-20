@@ -71,6 +71,50 @@ Ponto eletrônico biométrico, banco de horas (horas extras são sempre remunera
 
 ---
 
+## 💻 Executando o Backend (API Flask)
+
+O backend do sistema está localizado na pasta [`backend/`](backend/) e foi desenvolvido em **Python + Flask + SQLite**.
+
+### 1. Pré-requisitos
+* Python 3.10 ou superior instalado.
+
+### 2. Configuração e Inicialização
+```bash
+# Acesse o diretório do backend
+cd backend
+
+# Crie e ative o ambiente virtual
+python -m venv venv
+# No Windows:
+venv\Scripts\activate
+# No Linux/Mac:
+# source venv/bin/activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Inicialize o banco de dados SQLite com os parâmetros legais de 2026
+python manage.py init-db
+
+# Crie o primeiro usuário administrador ou de RH
+python manage.py criar-usuario --nome "Maria" --email maria@empresa.com --perfil RH
+
+# (Opcional) Popule filiais e colaboradores fictícios de teste
+python manage.py seed-demo
+
+# Inicie o servidor da API (porta 5000)
+python run.py
+```
+
+### 3. Executando os Testes Automatizados
+```bash
+# Na pasta backend, execute:
+python -m unittest discover -s tests -t . -v
+```
+Todos os 34 testes unitários e de integração devem passar com sucesso.
+
+---
+
 ## 📂 Estrutura de Documentação
 
 - [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md): Documento oficial e integral de especificação de requisitos (v1.0 consolidada).
