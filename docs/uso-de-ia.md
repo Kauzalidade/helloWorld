@@ -15,7 +15,7 @@ Ao interagir com qualquer modelo ou agente de IA, certifique-se de que a IA **n�
 ## 📋 Como Preparar o Contexto para a IA
 
 Antes de enviar qualquer solicitação de código ou modelagem para a IA:
-1. Forneça o arquivo [docs/especificacao-requisitos.md](especificacao-requisitos.md) como contexto ou anexo.
+1. Forneça o arquivo [docs/spec.md](spec.md) como contexto ou anexo.
 2. Reforce a instrução de respeitar as diretrizes de [AGENTS.md](../AGENTS.md).
 3. Especifique claramente qual das **4 etapas** está sendo trabalhada. Não permita que a IA implemente recursos de etapas futuras.
 

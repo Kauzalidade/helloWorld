@@ -117,7 +117,7 @@ Todos os 34 testes unitários e de integração devem passar com sucesso.
 
 ## 📂 Estrutura de Documentação
 
-- [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md): Documento oficial e integral de especificação de requisitos (v1.0 consolidada).
+- [docs/spec.md](docs/spec.md): Documento oficial e integral de especificação de requisitos (v1.3 consolidada).
 - [docs/uso-de-ia.md](docs/uso-de-ia.md): Guia de trabalho com IA, incluindo os 5 prompts padronizados e regras de conduta.
 - [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md): Rastreamento de dúvidas, hipóteses não confirmadas e pendências junto ao cliente e contabilidade.
 - [AGENTS.md](AGENTS.md): Diretrizes operacionais e restrições obrigatórias para agentes e assistentes de inteligência artificial.
@@ -126,6 +126,6 @@ Todos os 34 testes unitários e de integração devem passar com sucesso.
 
 ## 🚀 Como Contribuir
 
-1. Leia integralmente o arquivo [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md).
+1. Leia integralmente o arquivo [docs/spec.md](docs/spec.md).
 2. Certifique-se de que cada alteração implemente testes unitários com base nos cenários de aceite em Gherkin.
 3. Ao usar IA, siga estritamente os comandos e premissas detalhados em [docs/uso-de-ia.md](docs/uso-de-ia.md).
