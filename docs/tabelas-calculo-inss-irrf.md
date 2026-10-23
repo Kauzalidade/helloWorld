@@ -1,6 +1,6 @@
 # Tabelas de cálculo: INSS e IRRF (2026)
 
-> Derivado de `docs/especificacao-requisitos.md` (seções 5.3, 6.2, 6.3 e 8). Em caso de divergência, vale a especificação.
+> Derivado de `docs/spec.md` (seções 5.3, 6.2, 6.3 e 8). Em caso de divergência, vale a especificação.
 > Valores conferidos em 13/10/2026. O contador do cliente deve confirmar antes do uso real (pendência **P-02**).
 > **RN-01:** estes valores NÃO podem ficar fixos no código. Devem ser carregados de uma tabela de parâmetros com início e fim de vigência.
 

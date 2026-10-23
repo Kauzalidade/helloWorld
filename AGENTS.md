@@ -10,7 +10,7 @@ Este arquivo define as regras operacionais, comportamentais e técnicas obrigat�
 
 - Marque qualquer suposição não confirmada explicitamente como **`[HIPÓTESE]`**.
 - Adicione a dúvida imediatamente no arquivo [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md).
-- Consulte e respeite o documento base: [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md).
+- Consulte e respeite o documento base: [docs/spec.md](docs/spec.md).
 - Toda comunicação de dúvidas de negócio deve ser direcionada à liderança do **GTI 4º período** (Severino Felipe / Antônio Fabrício).
 
 ---

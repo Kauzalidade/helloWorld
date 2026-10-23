@@ -3,7 +3,7 @@
 > **Projeto acadêmico e prático de Gestão de Tecnologia da Informação (GTI)**  
 > **Especificação:** GTI 4º período · **Desenvolvimento:** GTI 2º período  
 > **Cliente:** Correspondente bancário (15 colaboradores, 1 matriz + 2 filiais)  
-> **Versão da Especificação:** 1.0 consolidada (14/10/2026)
+> **Versão da Especificação:** 1.3 (21/10/2026)
 
 ---
 
@@ -73,7 +73,7 @@ Ponto eletrônico biométrico, banco de horas (horas extras são sempre remunera
 
 ## 📂 Estrutura de Documentação
 
-- [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md): Documento oficial e integral de especificação de requisitos (v1.0 consolidada).
+- [docs/spec.md](docs/spec.md): Documento oficial e integral de especificação de requisitos (v1.3).
 - [docs/uso-de-ia.md](docs/uso-de-ia.md): Guia de trabalho com IA, incluindo os 5 prompts padronizados e regras de conduta.
 - [docs/perguntas-pendentes.md](docs/perguntas-pendentes.md): Rastreamento de dúvidas, hipóteses não confirmadas e pendências junto ao cliente e contabilidade.
 - [AGENTS.md](AGENTS.md): Diretrizes operacionais e restrições obrigatórias para agentes e assistentes de inteligência artificial.
@@ -82,6 +82,6 @@ Ponto eletrônico biométrico, banco de horas (horas extras são sempre remunera
 
 ## 🚀 Como Contribuir
 
-1. Leia integralmente o arquivo [docs/especificacao-requisitos.md](docs/especificacao-requisitos.md).
+1. Leia integralmente o arquivo [docs/spec.md](docs/spec.md).
 2. Certifique-se de que cada alteração implemente testes unitários com base nos cenários de aceite em Gherkin.
 3. Ao usar IA, siga estritamente os comandos e premissas detalhados em [docs/uso-de-ia.md](docs/uso-de-ia.md).
