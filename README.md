@@ -18,23 +18,23 @@ O sistema foi concebido com foco em segurança, rastreabilidade (auditoria), con
 ## 👥 Equipe e Responsáveis
 
 ### GTI 4º Período (Requisitos, Negócio e Qualidade)
-- **Severino Felipe:** Líder e ponte de comunicação com o 2º período
-- **Antônio Fabrício:** Regras de negócio e engenharia de folha
-- **José Roberto:** Contato direto com o cliente (RH) e atas
-- **Wesley Antônio:** Estratégia de testes e garantia de qualidade
+- **Severino Felipe:** Líder e ponte com o 2º período
+- **Antônio Fabrício:** Regras de negócio e folha
+- **José Roberto:** Contato com o cliente (RH) e ata
+- **Wesley Antônio:** Testes e qualidade
 
 ### GTI 2º Período (Desenvolvimento)
-- **Kauã:** Representante do grupo / Repositório, INSS, IRRF e ponte com o 4º período
-- **Jeremias:** Desenvolvedor e Vibe Coder
-- **Valdir:** Desenvolvedor responsável por correções
-- **Pietro:** Desenvolvedor Back-end (Back-end Developer) / AI Quality Engineer
+- **Jonas Kauã:** Representante da turma e desenvolvedor
+- **Carlos Pietro:** Desenvolvedor
+- **José Geremias:** Desenvolvedor
+- **Valdir Fonséca:** Desenvolvedor
 
 ### Grupo de RH (Cliente)
-- **Vitor:** Diretor de Recursos Humanos
-- **Deyse:** Analista de Departamento Pessoal (folha, férias, 13º, benefícios)
-- **Alana Catiany de Morais:** Analista de Recrutamento e Seleção
+- **Vitor:** Diretor de Recursos Humanos: coordena a equipe, acompanha resultados e supervisiona as atividades
+- **Deyse:** Analista de Departamento Pessoal: folha, férias, 13º, benefícios e documentos
+- **Alana Catiany de Morais:** Analista de Recrutamento e Seleção. Passou as informações ao GTI
 - **Marília:** Analista de Treinamento e Desenvolvimento
-- **Thayane:** Analista de Gestão e Relatórios
+- **Thayane:** Analista de Gestão e Relatórios: organiza dados, controla planilhas e elabora relatórios
 
 ---
 
