@@ -1,6 +1,6 @@
-# Back-end – Sistema de RH e Folha de Pagamento
+# Back-end – projetoFolha (Sistema de RH e Folha de Pagamento)
 
-Back-end em **Python + Flask + SQLite** feito a partir da *Especificação de Requisitos v1.0* (GTI 4º período).
+Back-end em **Python + Flask + SQLite** feito a partir da *Especificação de Requisitos v1.3* (GTI 4º período).
 Cobre a **Etapa 1** (login, perfis, filiais, colaboradores, histórico e logs) e o **motor de cálculo** da folha
 (INSS, IRRF, horas extras, DSR, faltas, VT, VA, FGTS e férias). Dinheiro sempre em `Decimal`.
 

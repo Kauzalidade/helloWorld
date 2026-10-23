@@ -1,6 +1,6 @@
 # Perguntas Pendentes e Hipóteses de Negócio
 
-Este documento registra todas as pendências formais, hipóteses não confirmadas e dúvidas de negócio do **Sistema de RH e Folha de Pagamento**.
+Este documento registra todas as pendências formais, hipóteses não confirmadas e dúvidas de negócio do **projetoFolha** (Sistema de RH e Folha de Pagamento).
 
 > **Regra de ouro:** Se faltar informação, **não inventem a regra**; anotem a dúvida neste arquivo e perguntem ao **GTI 4º período** ou ao cliente.
 

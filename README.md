@@ -1,15 +1,16 @@
-# Sistema de RH e Folha de Pagamento
+# projetoFolha — Sistema de RH e Folha de Pagamento
 
 > **Projeto acadêmico e prático de Gestão de Tecnologia da Informação (GTI)**  
+> **Repositório:** [github.com/Kauzalidade/projetoFolha](https://github.com/Kauzalidade/projetoFolha)  
 > **Especificação:** GTI 4º período · **Desenvolvimento:** GTI 2º período  
 > **Cliente:** Correspondente bancário (15 colaboradores, 1 matriz + 2 filiais)  
-> **Versão da Especificação:** 1.0 consolidada (14/10/2026)
+> **Versão da Especificação:** 1.3 consolidada (21/10/2026)
 
 ---
 
 ## 📌 Visão Geral do Projeto
 
-Este repositório contém a documentação e o código-fonte do **Sistema de RH e Folha de Pagamento**, projetado para automatizar e organizar o cálculo da folha mensal, férias, 13º salário, horas extras, adicionais e benefícios de uma instituição de correspondente bancário.
+Este repositório contém a documentação e o código-fonte do **projetoFolha** (Sistema de RH e Folha de Pagamento), projetado para automatizar e organizar o cálculo da folha mensal, férias, 13º salário, horas extras, adicionais e benefícios de uma instituição de correspondente bancário.
 
 O sistema foi concebido com foco em segurança, rastreabilidade (auditoria), conformidade com a LGPD e rigor no cálculo financeiro, garantindo parametrização legal e memória de cálculo detalhada para cada verba processada.
 

@@ -1,4 +1,4 @@
-# Diretrizes para Agentes de IA — Sistema de RH e Folha de Pagamento
+# Diretrizes para Agentes de IA — projetoFolha (Sistema de RH e Folha de Pagamento)
 
 Este arquivo define as regras operacionais, comportamentais e técnicas obrigatórias para qualquer agente de inteligência artificial (ou desenvolvedor assistido por IA) atuando neste repositório.
 

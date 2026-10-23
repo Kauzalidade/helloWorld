@@ -1,4 +1,4 @@
-# Guia de Uso de Inteligência Artificial no Projeto
+# Guia de Uso de Inteligência Artificial no projetoFolha
 
 Este documento orienta a equipe de desenvolvimento do **GTI 2º período** sobre como utilizar ferramentas e agentes de Inteligência Artificial de forma produtiva, segura e alinhada à especificação elaborada pelo **GTI 4º período**.
 
