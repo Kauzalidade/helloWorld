@@ -49,18 +49,26 @@ Este arquivo define as regras operacionais, comportamentais e técnicas obrigat�
 
 Respeite estritamente a fase atual solicitada pelo usuário. Não implemente adiantado módulos pertencentes a etapas posteriores:
 
-1. **Etapa 1:** Login, perfis (RH, Diretoria, Admin), filiais e colaboradores (RN-10 a RN-14, US-01, US-07).
-2. **Etapa 2:** Lançamento de eventos (horas extras, faltas, atestados, VT, VA) (RN-30 a RN-34, US-02).
-3. **Etapa 3:** Cálculo da folha, memória de cálculo e fechamento (RN-20 a RN-24, US-03, US-04).
-4. **Etapa 4:** Férias, 13º, contracheques e relatórios PDF/Excel (RN-40 a RN-57, US-05, US-06, US-08, US-09).
+1. **Etapa 1:** Login, perfis (RH, Diretoria, Admin), cadastro de filiais, colaboradores, parâmetros legais e feriados (RN-01, RN-10 a RN-15, RN-35, US-01, US-07, US-11, US-12).
+2. **Etapa 2:** Lançamento de eventos: horas extras 50%/100%, faltas, atestados médicos, VT, VA e verbas avulsas (RN-25, RN-30 a RN-34, US-02, US-10).
+3. **Etapa 3:** Cálculo da folha progressivo (INSS, IRRF com redução da Lei 15.270/2025, FGTS, DSR sobre horas extras RN-31), memória de cálculo detalhada, fechamento seguro e reabertura com justificativa e log (RN-02 a RN-06, RN-08, RN-20 a RN-27, RN-31, US-03, US-04).
+4. **Etapa 4:** Férias (aquisitivo/concessivo, abono, faltas, média de variáveis RN-48), 13º salário (RN-46), documentos com alerta, contracheques e relatórios PDF/Excel (RN-40 a RN-58, US-05, US-06, US-08, US-09).
+
+### 🛠️ Stack Tecnológica Oficial (Seção 15.3):
+- **Linguagem & Runtime:** Node.js com TypeScript
+- **Banco de Dados:** PostgreSQL (`DECIMAL(12, 2)`)
+- **Manipulação Monetária:** `decimal.js` (arredondamento *half-up* por verba - RN-03)
+- **Testes Automatizados:** Testes unitários e de integração com cenários Gherkin (Seção 10) e tolerância de R$ 0,01.
 
 ### Itens Fora do Escopo da Versão 1:
 - Ponto eletrônico
 - Banco de horas (horas extras são sempre pagas)
 - Rescisão contratual
 - Arquivo bancário CNAB
-- Recrutamento, seleção e portal do colaborador
+- Recrutamento, seleção, avaliação de desempenho e treinamentos
+- Portal do colaborador
 - Integrações automáticas externas (eSocial, Microsoft, Google)
+- Cálculo automático de adicional noturno, insalubridade, periculosidade, comissões, salário-família, pensão, consignado e assistência médica (o RH registra esses casos manualmente como verbas avulsas - RN-25)
 
 ---
 

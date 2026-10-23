@@ -40,24 +40,34 @@ O sistema foi concebido com foco em segurança, rastreabilidade (auditoria), con
 
 ## 🎯 Escopo e Fases de Entrega
 
-O desenvolvimento está dividido em 4 etapas bem delimitadas com critérios de aceite claros:
+> **Diretriz oficial (v1.3):** O repositório segue a especificação v1.3, implementando as regras oficiais de DSR (RN-31), reflexos de horas extras (RN-32 e RN-48), 13º salário (RN-46 e RN-48) e verbas avulsas (RN-25).
 
 ```mermaid
 flowchart LR
-    E1["Etapa 1: Base & Cadastros\n(Login, Perfis, Filiais, Colaboradores)"] --> E2["Etapa 2: Eventos\n(Horas extras, Faltas, Atestados, VT/VA)"]
-    E2 --> E3["Etapa 3: Motor de Cálculo\n(INSS, IRRF, FGTS, Memória, Fechamento)"]
-    E3 --> E4["Etapa 4: Férias, 13º & Saídas\n(Férias, 13º, Contracheque, Relatórios PDF/XLSX)"]
+    E1["Etapa 1: Base & Parâmetros\n(Login, Perfis, Filiais, Colaboradores, Feriados)"] --> E2["Etapa 2: Eventos & Avulsos\n(Horas extras, Faltas, Atestados, VT/VA, Verbas Avulsas)"]
+    E2 --> E3["Etapa 3: Motor de Cálculo & Fechamento\n(INSS, IRRF, FGTS, DSR, Memória, Fechamento e Reabertura)"]
+    E3 --> E4["Etapa 4: Férias, 13º & Relatórios\n(Férias, 13º, Documentos com Alerta, Contracheque, Relatórios PDF/XLSX)"]
 ```
 
 | Etapa | Entregáveis | Critério de Conclusão |
 | :---: | :--- | :--- |
-| **Etapa 1** | Autenticação, controle de perfis (RH, Diretoria, Admin), cadastro de filiais e colaboradores | Cadastra, edita, consulta e inativa; rejeita duplicidade de CPF |
-| **Etapa 2** | Lançamento mensal de eventos operacionais (horas extras 50%/100%, faltas, atestados médicos, VT e VA) | Validações e cenários de eventos passam |
-| **Etapa 3** | Motor de cálculo progressivo (INSS, IRRF com deduções e Lei 15.270/2025, FGTS), memória de cálculo e fechamento seguro de competência | Folha calculada com memória passo a passo; fechamento bloqueado se houver pendências cadastrais |
-| **Etapa 4** | Módulo de férias (controle de aquisitivo/concessivo, abono), cálculo do 13º em duas parcelas, emissão de contracheques e relatórios | Cenários de férias e 13º aprovados; relatórios exportáveis em PDF e Excel |
+| **Etapa 1** | Autenticação, controle de perfis (RH, Diretoria, Admin), cadastro de filiais, colaboradores, parâmetros legais e feriados | Cadastra, edita, consulta e inativa; rejeita duplicidade de CPF e valida campos obrigatórios |
+| **Etapa 2** | Lançamento mensal de eventos (horas extras 50%/100%, faltas, atestados médicos, VT, VA e verbas avulsas RN-25) | Cenários de horas extras e descontos passam. A tela de lançamentos com verbas avulsas precisa estar pronta antes do cálculo da Etapa 3 |
+| **Etapa 3** | Motor de cálculo progressivo (INSS, IRRF com redução da Lei 15.270/2025, FGTS, DSR RN-31), memória de cálculo detalhada, fechamento seguro e reabertura com log | Folha calculada com memória passo a passo; fechamento bloqueado nos casos da tabela 7.1; reabertura com justificativa e notificação à diretoria |
+| **Etapa 4** | Módulo de férias (aquisitivo/concessivo, abono, redução por faltas, média de variáveis), 13º em 2 parcelas, documentos com alerta, contracheques e relatórios | Cenários de férias e 13º aprovados; emissão de contracheque e relatórios exportáveis em PDF e Excel |
 
 ### 🚫 Fora do Escopo da 1ª Versão
-Ponto eletrônico biométrico, banco de horas (horas extras são sempre remuneradas), rescisão contratual, arquivo bancário automatizado (CNAB), recrutamento, avaliação de desempenho, portal do colaborador e integrações externas (eSocial, Google, M365).
+- **Processos e Ferramentas:** Ponto eletrônico biométrico, banco de horas (horas extras são sempre remuneradas), rescisão contratual, arquivo bancário automatizado (CNAB), recrutamento e seleção, avaliação de desempenho/treinamentos, portal do colaborador e integrações externas automáticas (eSocial, Microsoft 365, Google).
+- **Sem Cálculo Automático (Lançados como Verbas Avulsas - RN-25):** Adicional noturno, insalubridade, periculosidade, comissões, salário-família, pensão alimentícia, empréstimo consignado e assistência médica. O RH registra esses itens manualmente com as devidas incidências de INSS, IRRF e FGTS.
+
+---
+
+## 🛠️ Stack Tecnológica Definida (Seção 15.3)
+
+- **Linguagem & Runtime:** Node.js com TypeScript
+- **Banco de Dados Relacional:** PostgreSQL (tipos `DECIMAL(12, 2)` para valores monetários)
+- **Precisão Financeira:** Biblioteca `decimal.js` (arredondamento *half-up* por verba - RN-03)
+- **Testes Automatizados:** Testes unitários e de integração cobrindo 100% dos cenários Gherkin (Seção 10) e exemplos numéricos oficiais (Seção 8)
 
 ---
 

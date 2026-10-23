@@ -17,17 +17,19 @@ Este documento registra todas as pendências formais, hipóteses não confirmada
 
 ---
 
-## 🔍 2. Hipóteses Mapeadas que Precisam de Confirmação
+## 🔍 2. Hipóteses Consolidadas na Especificação v1.3 ([ADOTADO])
 
-| Ref. | Tema | Hipótese Assumida | Impacto no Código | Pergunta para o GTI 4º Período / Cliente |
-| :--- | :--- | :--- | :--- | :--- |
-| **H-01** (Seção 4 / RN-04) | Reabertura de Competência | O RH solicita a reabertura justificando o motivo, e a **Diretoria aprova** formalmente. | Fluxo de aprovação com mudança de estado da folha (`FECHADA` -> `SOLICITADA_REABERTURA` -> `ABERTA`). | Apenas a diretoria pode aprovar a reabertura ou o próprio gestor de RH pode fazê-lo diretamente em caso de urgência? |
-| **H-02** (Seção 4 / RN-54) | Acesso a Dados de Saúde | A Diretoria **NÃO** tem acesso a atestados e exames; apenas o RH tem permissão. | Regra de autorização (RBAC) e ocultação de anexos médicos para perfil Diretoria. | A diretoria pode visualizar o motivo/CID do atestado ou apenas o total de dias de ausência para fins de planejamento? |
-| **H-03** (RN-10) | Campos Mínimos de Cadastro | Nome, CPF, nascimento, admissão, cargo, setor, filial, salário-base, jornada, dados bancários e dependentes IRRF. | Definição dos campos obrigatórios (`NOT NULL`) na tabela de colaboradores. | Há necessidade de telefone, e-mail pessoal ou endereço completo obrigatório já na Etapa 1? |
-| **H-04** (RN-20) | Proporcionalidade de Admissão/Demissão | Admitidos ou desligados no mês recebem proporcional aos dias corridos trabalhados (fração de 30 avos). | Fórmula do cálculo do salário no mês de admissão/desligamento. | O divisor de proporcionalidade de mês incompleto é sempre 30 ou considera o número exato de dias do mês (ex.: 28, 31)? |
-| **H-05** (RN-42) | Fracionamento de Férias | Permitido em até 3 períodos: um de no mínimo 14 dias e os demais com no mínimo 5 dias. | Validação das datas no formulário de agendamento de férias. | O cliente adota a regra padrão da CLT de fracionamento ou há política interna de período mínimo único? |
-| **H-06** (RN-44) | Redução de Férias por Faltas | Faltas injustificadas no período aquisitivo reduzem o saldo de dias conforme tabela CLT (art. 130). | Tabela progressiva de abatimento de dias de férias por número de faltas. | O RH deseja que o sistema reduza os dias automaticamente com base nas faltas lançadas no período aquisitivo? |
-| **H-07** (RNF-06) | Responsividade Mobile | Foco prioritário é acesso via desktop/computador; celular responsivo apenas se houver tempo hábil. | Complexidade do layout CSS da interface web. | O uso do sistema em tablets ou celulares por gestores é crítico para a 1ª versão? |
+Todas as hipóteses abaixo foram formalizadas e adotadas pelo **GTI 4º período** na versão 1.3 da especificação, tornando-se regras operacionais ativas:
+
+| Ref. | Tema | Decisão Oficial v1.3 ([ADOTADO]) | Regra Associada | Status na v1.3 |
+| :--- | :--- | :--- | :--- | :---: |
+| **H-01** | Reabertura de Competência | O RH reabre a competência por conta própria informando justificativa obrigatória. O sistema homologa imediatamente, grava evento destacado no Log de Auditoria imutável e notifica a Diretoria para fiscalização. | RN-04 | **Adotado** |
+| **H-02** | Acesso a Dados de Saúde | Apenas o RH tem acesso a atestados e exames. A Diretoria **não** tem acesso a dados de saúde; cada consulta gera log. | RN-54 / Seção 4 | **Adotado** |
+| **H-03** | Campos Mínimos e Validações | Nome (>=3 chars), CPF (11 dígitos e DV válidos), nascimento, admissão, cargo, setor, filial, salário-base (>0), jornada, dados bancários e dependentes IRRF. | RN-10, RN-15 | **Adotado** |
+| **H-04** | Proporcionalidade de Mês Incompleto | Admissão ou demissão no mês calcula proporcional aos dias trabalhados na base de 30 avos: `(salario-base / 30) * dias`. | RN-20 | **Adotado** |
+| **H-05** | Fracionamento de Férias | Permitido em até 3 períodos: um de no mínimo 14 dias e os demais com no mínimo 5 dias. | RN-42 | **Adotado** |
+| **H-06** | Redução de Férias por Faltas | Faltas injustificadas reduzem o período aquisitivo conforme a tabela da CLT (art. 130), configurável via parâmetro. | RN-44 | **Adotado** |
+| **H-07** | Plataforma de Acesso | Sistema projetado para computador/desktop; versão para celular fica para a 2ª versão. | RNF-06 | **Adotado** |
 
 ---
 

@@ -10,7 +10,7 @@ Atividade da disciplina: Spec-Driven Development com IA · Prof. Dr. Juan Apolin
 
 Versão 1.3 · 21/10/2026 (histórico na seção 19)
 
-Repositório do desenvolvimento (GTI 2º período): github.com/Kauzalidade/helloWorld
+Repositório do desenvolvimento (GTI 2º período): github.com/Kauzalidade/projetoFolha
 
 > **Resumo:** especificação de um sistema web de RH e folha de pagamento para uma empresa correspondente bancária (15 colaboradores, matriz + 2 filiais). O sistema calcula INSS e IRRF de 2026, explica cada valor (memória de cálculo) e controla férias, 13º, documentos e alertas. É verificável: regras numeradas, requisitos não funcionais com números, cenários Gherkin com situações de erro e exemplos de cálculo. Orienta a implementação por agentes de IA (seções 15.1 e 15.3) e registra a revisão feita com IA (seção 15.2).
 
@@ -61,7 +61,7 @@ Uma empresa correspondente bancária, com **15 colaboradores** em **1 matriz e 2
 
 Colaboradores e gestores **não** acessam o sistema nesta versão. O que entra e o que fica de fora da 1ª versão está na seção 2.
 
-> **Diretriz para o desenvolvimento:** o grupo do GTI 2º período deve atualizar o README.md do repositório (github.com/Kauzalidade/helloWorld) para referenciar e seguir esta versão 1.3, implementando as regras oficiais de DSR (RN-31), reflexos de horas extras (RN-32 e RN-48) e 13º salário (RN-46 e RN-48).
+> **Diretriz para o desenvolvimento:** o grupo do GTI 2º período deve atualizar o README.md do repositório (github.com/Kauzalidade/projetoFolha) para referenciar e seguir esta versão 1.3, implementando as regras oficiais de DSR (RN-31), reflexos de horas extras (RN-32 e RN-48) e 13º salário (RN-46 e RN-48).
 
 ### 1.4 Decisões do cliente
 
