@@ -1,0 +1,26 @@
+{
+  "name": "rh-folha-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Back-end do sistema de RH e folha de pagamento (Node.js, TypeScript e SQLite)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "start:prod": "node dist/src/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "init-db": "tsx src/manage.ts init-db",
+    "criar-usuario": "tsx src/manage.ts criar-usuario",
+    "seed-demo": "tsx src/manage.ts seed-demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}
