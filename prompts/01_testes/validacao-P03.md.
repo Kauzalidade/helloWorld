@@ -1,0 +1,141 @@
+# Relatório de Validação — P03: Geração de Testes Automatizados
+
+**Projeto:** Sistema de RH e Folha de Pagamento  
+**Prompt avaliado:** P03 — Geração de Testes Automatizados  
+**Branch:** `testes-prompts`  
+**Ferramenta utilizada:** Antigravity IDE  
+**Linguagem:** Python  
+**Framework de testes:** unittest  
+**Data da validação:** 23/10/2026  
+**Status:** Aprovado na execução funcional, com ressalvas
+
+---
+
+## 1. Objetivo
+
+Validar a capacidade do prompt P03 de orientar uma inteligência artificial na análise dos requisitos do sistema, identificação de lacunas de testes e criação de testes automatizados, sem alterar as funcionalidades existentes.
+
+## 2. Metodologia
+
+A validação foi realizada nas seguintes etapas:
+
+1. Análise dos testes existentes em `backend/tests/`.
+2. Comparação dos testes com o documento `docs/especificacao-requisitos.md`.
+3. Identificação de cenários ainda não cobertos.
+4. Investigação dos avisos `ResourceWarning` relacionados ao SQLite.
+5. Planejamento e criação de testes complementares com `unittest`.
+6. Execução da suíte completa no ambiente virtual Python.
+
+A IA recebeu instruções para não inventar regras de negócio, não modificar testes existentes e não executar operações Git de commit, push ou merge.
+
+## 3. Testes implementados
+
+Foi criado o arquivo:
+
+`backend/tests/test_calculo_complementar.py`
+
+O arquivo contém 17 testes complementares, abordando:
+
+- Limites das faixas de contribuição do INSS.
+- Incidência de horas extras e DSR na base do INSS.
+- Dedução de dependentes no IRRF.
+- Comparação entre dedução simplificada e tradicional.
+- Redução do IRRF conforme parâmetros documentados para 2026.
+- Cálculo de FGTS como encargo da empresa.
+- Cálculo de DSR sobre horas extras.
+- Descontos proporcionais por faltas.
+- Rejeição de salários e horas extras negativos.
+- Validação de entradas numéricas inválidas.
+- Validação dos limites de dias de férias.
+
+## 4. Resultado da execução
+
+A suíte completa foi executada localmente utilizando o ambiente virtual Python.
+
+**Comando utilizado:**
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+| Indicador | Resultado |
+|---|---|
+| Testes anteriores | 34 |
+| Testes complementares | 17 |
+| Total executado | 51 |
+| Testes aprovados | 51 |
+| Falhas reportadas | 0 |
+| Erros reportados | 0 |
+| Tempo total | 23,859 segundos |
+| Resultado final | OK |
+
+A saída do terminal confirmou:
+
+```text
+Ran 51 tests in 23.859s
+
+OK
+```
+
+## 5. Verificação do Git
+
+Após a execução, foi utilizado o comando:
+
+```bash
+git status
+```
+
+O Git identificou apenas um arquivo novo não rastreado:
+
+`backend/tests/test_calculo_complementar.py`
+
+A pasta do ambiente virtual não apareceu entre os arquivos pendentes.
+
+Nenhum commit ou push foi realizado nesta etapa.
+
+## 6. Problemas e limitações identificados
+
+### 6.1. Ambiente de execução
+
+A primeira tentativa de executar os testes utilizou o Python global do Windows, que não possuía as dependências necessárias, como Flask e Werkzeug.
+
+O problema foi contornado utilizando um ambiente virtual local com as dependências do projeto.
+
+### 6.2. Avisos do SQLite
+
+Na execução anterior, foram identificados avisos `ResourceWarning` referentes a conexões SQLite possivelmente não encerradas.
+
+A análise da IA apontou a ausência de fechamento explícito de conexões em determinados testes como possível causa.
+
+A correção desses avisos não fez parte do escopo desta validação.
+
+### 6.3. Cobertura e conformidade
+
+Embora todos os 51 testes tenham sido aprovados, isso não garante cobertura completa do sistema.
+
+Os resultados esperados dos cálculos tributários precisam permanecer alinhados à especificação e ser conferidos por responsáveis qualificados antes de qualquer utilização real da folha de pagamento.
+
+Também permanecem pendentes regras de negócio que dependem de confirmação do grupo responsável pelos requisitos.
+
+## 7. Avaliação do prompt P03
+
+O prompt demonstrou capacidade de:
+
+- Orientar a análise dos requisitos e testes existentes.
+- Identificar lacunas relevantes de cobertura.
+- Gerar testes automatizados compatíveis com `unittest`.
+- Preservar os testes anteriormente implementados.
+- Produzir resultados verificáveis por meio da execução no terminal.
+- Respeitar as restrições de implementação e operações Git estabelecidas.
+
+## 8. Conclusão
+
+**O prompt P03 foi aprovado na etapa de validação funcional.**
+
+A IA criou 17 testes complementares, e a suíte completa do projeto executou 51 testes com resultado `OK`, sem falhas ou erros reportados.
+
+O resultado demonstra que o prompt é útil para apoiar a geração e ampliação de testes automatizados no desenvolvimento do Sistema de RH e Folha de Pagamento.
+
+A aprovação é limitada ao comportamento observado nesta execução, não representando certificação de conformidade legal, cobertura integral ou ausência de defeitos no sistema.
+
+**Próximas ações:** registrar o relatório no repositório, revisar as pendências de requisitos e submeter as alterações à revisão da equipe antes da integração.
