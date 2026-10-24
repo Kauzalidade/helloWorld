@@ -2,11 +2,14 @@
 
 **Projeto:** Sistema de RH e Folha de Pagamento  
 **Prompt avaliado:** P03 — Geração de Testes Automatizados  
+**Versão do prompt:** P03 — v1.0 (versão inicial de validação)  
+**Local do prompt:** `prompts/02_prontos/P03-geracao-testes-automatizados.md` (caminho planejado)  
 **Branch:** `testes-prompts`  
 **Ferramenta utilizada:** Antigravity IDE  
 **Linguagem:** Python  
 **Framework de testes:** unittest  
 **Data da validação:** 23/10/2026  
+**Responsável:** José Geremias  
 **Status:** Aprovado na execução funcional, com ressalvas
 
 ---
@@ -138,4 +141,14 @@ O resultado demonstra que o prompt é útil para apoiar a geração e ampliaçã
 
 A aprovação é limitada ao comportamento observado nesta execução, não representando certificação de conformidade legal, cobertura integral ou ausência de defeitos no sistema.
 
-**Próximas ações:** registrar o relatório no repositório, revisar as pendências de requisitos e submeter as alterações à revisão da equipe antes da integração.
+
+**Próximas ações:**
+
+- [x] Criar o relatório de validação do prompt P03.
+- [x] Executar os 51 testes automatizados com resultado `OK` no ambiente local.
+- [x] Criar o Pull Request #3 para revisão do relatório.
+- [ ] Confirmar que a versão atualizada do relatório foi salva no Pull Request #3.
+- [ ] Registrar a versão definitiva do prompt P03 em `prompts/02_prontos/P03-geracao-testes-automatizados.md`.
+- [ ] Enviar o arquivo `backend/tests/test_calculo_complementar.py` ao repositório para revisão.
+- [ ] Revisar as pendências dos requisitos com a equipe.
+- [ ] Aguardar a revisão e aprovação do Pull Request antes da integração à branch `main`.
